@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+
+    <link
+      rel="Mali"
+      sizes="180x180"
+      href="assets/icons/Mali.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/Mali.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/Mali.png"
+    />
+
+    <title>Visita Mali</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">
+        <h1>
+          <span class="jab">Mali,</span><span class="tv"> tierra de camellos</span
+          ><span class="fist">🐫</span>
+        </h1>
+      </a>
+
+     
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" id="nav-link">Acerca de Mali</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stars" class="nav-link" id="nav-link">Lugares idóneos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >Agentes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#sub" class="nav-link" id="nav-link">Contáctanos</a>
+        </li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    
+    <section class="hero">
+      <div class="intro-text">
+        <h1>
+          <span class="hear"> Siéntete uno con el África... </span> <br />
+          <span class="connecting"> ... con el fluir del río Níger </span>
+        </h1>
+        <p>
+          En Mali el tiempo fluye diferente... <br />
+          Descubre la ciudad de los 333 santos
+        </p>
+        <a class="btn red" href="#">Learn More</a>
+        <a class="btn blue" href="#">Subscribe</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h3>La magia de Mali</h3>
+      <p>
+        El área que ahora es Malí fue una vez parte de los tres grandes imperios sudaneses precoloniales: Ghana, Malí y Songhai. El legendario pero ahora desaparecido centro de aprendizaje Tombuctú está situado en Malí, en la parte superior del río Níger. Durante siglos, las caravanas cruzaron el desierto del Sahara desde el norte de África, mientras que otras venían de las regiones boscosas del sur y se encontraban en el cruce de caminos de Tombuctú.
+      </p>
+
+      <h3>En la región de Dogon...</h3>
+      <p>
+        La región de Dogon, centrada en la escarpa de Bandiagara en el área central del país, es un importante destino turístico debido a sus singulares pueblos junto a los acantilados y su diversa vida artística. La capital nacional, Bamako, se encuentra a orillas del río Níger y es una ciudad en rápido crecimiento.
+      </p>
+    </section>
+
+    
+   
+    
+    </head>
+    <body>
+    
+    <h2></h2>
+    <p></p>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/images/bamako.jpg" style="width:100%">
+      <div class="text">Ciudad de Bamako</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/images/desierto.jpg" style="width:100%">
+      <div class="text">El desierto de Mali</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/images/riolempa.jpg" style="width:100%">
+      <div class="text">El río Níger</div>
+    </div>
+     
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/images/timbuktu.jpg" style="width:100%">
+      <div class="text">Tombuctú la ciudad de los 333 santos</div>
+    </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); 
+    }
+    </script>
+    
+    </body>
+    </html> 
+    
+
+    <section class="people" id="stakeholders">
+      <div class="stakeholders">
+        <div class="persons">
+          <div class="person-1">
+            <img src="assets/images/quiensos.jpg" alt="John Doe" />
+            <p class="name">Gustavo Fring</p>
+            <p class="role">CEO de Mali</p>
+          </div>
+          <div class="person-1">
+            <img src="assets/images/hf.jpg" alt="John Doe" />
+            <p class="name">Francisco Argüello</p>
+            <p class="role">Residente en Mali</p>
+            <p><a href="https://github.com/franargaz">Github</a> </p>
+          </div>
+          <div class="person-1">
+            <img src="assets/images/walter.jpg" alt="John Doe" />
+            <p class="name">Walter Bazar</p>
+            <p class="role">Granjero de camellos</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email subscription -->
+    <section class="sub" id="sub">
+      <h3>Mandanos un mensaje</h3>
+    
+    </section>
+
+   
+    <section class="social">
+      <h3>Seguinos en redes</h3>
+      <div class="socicons">
+        <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+        <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+      </div>
+    </section>
+
+    <footer>Te esperamos en Mali</footer>
+
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.png"
+        class="socicon up-arrow"
+        alt="up-arrow"
+    /></i>
+
+    <script src="assets/js/app.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      var lightbox = new SimpleLightbox(".stars-gallery a");
+    </script>
+  </body>
+</html>
